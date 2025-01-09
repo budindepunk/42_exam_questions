@@ -1,0 +1,10 @@
+1) fix header:
+	#ifndef GET_NEXT_LINE_H
+		# define GET_NEXT_LINE_H
+2) include all necessary libraries (compiling errors will tell you which ones, or man pages)
+	<limits.h>
+	<fcntl.h>
+	etc
+3) somethig's up with the string initialization in gnl function. always segfaults. i re-wrote strchr.
+4) there's an "s1" being passed around that is a char**. why? 
+5) are str_append_str and str_append_mem both necessary? 
